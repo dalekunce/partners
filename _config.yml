@@ -1,22 +1,26 @@
-# Site settings
+---
 title: mm-partner
-safe:           false
-source:         app
-exclude:
-  - assets/scripts
-  - assets/vendor
-  - assets/styles
-  - README.md
 timezone: America/New_York
-highlighter: false 
-
-domain:         http://www.missingmaps.org
-path_prefix:    /partners
-
-default_partner: all
-
 collections:
   partner:
+    title: Partner
     output: true
-    permalink: /:path/
+    permalink: "/:path/"
     lang: en
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+safe: false
+source: app
+exclude:
+- assets/scripts
+- assets/vendor
+- assets/styles
+- README.md
+highlighter: false
+domain: http://www.missingmaps.org
+path_prefix: "/partners"
+default_partner: all
